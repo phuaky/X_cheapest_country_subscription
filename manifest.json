@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "X Premium Currency Converter",
+  "version": "1.0",
+  "description": "Convert X Premium pricing to a selected currency on the X Premium page.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png"
+    }
+  },
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://*.exchangerate-api.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://help.x.com/en/using-x/x-premium"
+      ],
+      "js": [
+        "currencyMap.js",
+        "content.js"
+      ],
+      "css": [
+        "styles.css"
+      ]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}

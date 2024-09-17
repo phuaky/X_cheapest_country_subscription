@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>X Premium Currency Converter</title>
+  <script src="currencyMap.js"></script>
+  <script src="popup.js"></script>
+  <style>
+    body {
+      width: 300px;
+      padding: 10px;
+    }
+
+    label,
+    input,
+    select,
+    button {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input,
+    select {
+      width: 100%;
+    }
+
+    #cheapest5 {
+      margin-top: 20px;
+      padding-left: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>X Premium Currency Converter</h1>
+  <label for="apiKey">API Key:</label>
+  <input type="password" id="apiKey">
+  <button id="saveApiKey">Save API Key</button>
+  <label for="package">Select Package:</label>
+  <select id="package">
+    <option value="">All Packages</option>
+    <!-- Options will be populated by JavaScript -->
+  </select>
+  <label for="currency">Select Currency:</label>
+  <select id="currency">
+    <!-- Options will be populated by JavaScript -->
+  </select>
+  <button id="convertButton">Convert</button>
+  <p id="status"></p>
+  <h2>Cheapest 5 Countries:</h2>
+  <ul id="cheapest5"></ul>
+</body>
+
+</html>

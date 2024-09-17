@@ -1,0 +1,44 @@
+/* Styles for the popup */
+body {
+    font-family: Arial, sans-serif;
+    width: 300px;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    font-size: 18px;
+    color: #1DA1F2;
+    margin-bottom: 15px;
+}
+
+select {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+p {
+    font-size: 14px;
+    color: #657786;
+}
+
+/* Styles for the added column on the X Premium page */
+.converted-price-column {
+    background-color: #E8F5FD;
+    font-weight: bold;
+}
+
+.converted-price-cell {
+    padding: 5px;
+    text-align: right;
+}
+
+/* Highlight the new column header */
+.converted-price-header {
+    background-color: #1DA1F2;
+    color: white;
+    padding: 5px;
+}
